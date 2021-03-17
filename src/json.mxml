@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="library://ns.apache.org/royale/mx" xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:j="library://ns.apache.org/royale/jewel"
+              xmlns:js="library://ns.apache.org/royale/basic"
+              xmlns:html="library://ns.apache.org/royale/html" layout="absolute">
+    <fx:Script>
+    <![CDATA[
+        public var request:MyClass;
+    public function send():void {
+        request=new MyClass(txtName.text);
+    }
+    ]]>
+</fx:Script>
+    
+        <mx:Label x="1" y="1" text="Please enter the ɢɪᴛ repository ʜᴛᴛᴘ ᴜʀʟ :"/>
+        <mx:TextInput x="224" y="1" width="726" id="txtName" text="http://ytrezq.sdfeu.org/flashredirect/?http"/>
+        <mx:Button x="1" y="12" label="ɢɪᴛ push !" click="send()"/> <!-- Undefined Method method error -->
+  
+    <fx:Declarations>
+    </fx:Declarations>
+</mx:Application>
